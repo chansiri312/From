@@ -3,50 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>คำร้องขอลาออก</title>
 </head>
-<div class="row">
 
-<div class="col-lg-3" align = 'center'><img src="img/มหาวิทยาลัยแม่โจ้_edit.png"  width="100" height="100" ></div></div>
+<div class="col" align = 'center'><img src="img/มหาวิทยาลัยแม่โจ้_edit.png"  width="100" height="100" ></div>
 <h1 align = 'center' ><b>คำร้องขอลาออก</b></h1>
+
+
 <body>
  
 <form action="">
 
   <div class="container">
-    <div class="row" align = 'right'>
+    <div class="row" >
+      <div class="col-5">
+       วันที่&nbsp; &nbsp;<input type="date"><br/><br/>
+      </div>
+    </div><br/><br/>
+     
+    <b>เรื่อง</b> ขอลาออก<br/><br/>
+    <div class="col-">
+     
+     เรียนอธิบดีคณะ <select >
+       <option value="1">คณะ--------
+        <option value="2">คณะบริหารศาสตร์
+          <option value="1">คณะศิลปศาสตร์
+            <option value="2">คณะวิศวกรรม
+              <option value="1">คณะวิทยาศาสตร์
+                <option value="2">คณะผลิตกรรมการเกษตร
+                  
+     </select><br/><br/>
+     
+
+     <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> นาย
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> นาง
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> นางสาว
+    </label>
+    <div class="row">
+      
+      <div class="col-xs-4">
+       <input type="text" class="form-control" maxlength="50"  placeholder="ชื่อ-นามสกุล">
+      </div>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" maxlength="10"  placeholder="เบอร์โทรศัพท์">
+      </div>
+      <div class="col-xs-4">
+       <input type="text" class="form-control" maxlength="10"  placeholder="รหัสนักศึกษา">
+      </div>
+    </div><br/><br/>
+   
+    หลักสูตร <select >
+      <option value="1">หลักสูตร
+       <option value="2">4-5 ปี
+         <option value="1">4 ปี เทียบเข้าเรียน(2ปี)
+           <option value="2">ภาคปกติ
+             <option value="1">ภาคสมทบ             
+    </select><br/><br/>
+
+    <div class="col-xs-4">
+      <input type="text" class="form-control" maxlength="50"  placeholder="คณะ-">
+     </div>
+     <div class="col-xs-4">
+       <input type="text" class="form-control" maxlength="50"  placeholder="สาขา-">
+     </div><br/><br/><br/><br/>
+    
+     
+     <b>มีความประสงค์จะขอลาออก เนื่องจาก</b><br/><br/>
+     <textarea class="form-control" rows="3"></textarea>
      <br/><br/>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     วันที่<input type="date"><br/><br/>
-</div>
-    ชื่อ <input type="text" name="fname" id="fname" maxlength="20" pattern="[A-Za-Z]{1,10}"  required> 
-    นามสกุล <input type="text" name="fname" id="fname" maxlength="20" pattern="[A-Za-Z]{1,10}"  required>  <br/> <br/>
-    
-    GPA
-     <input type="number" name="gpa" id="gpa" min="0.00" max="4.00" step="0.01" required>
 
-     Email ของนักศึกษา
-     <input type="range">
 
-    <input type="submit" value="ตกลง">
-    
+
+    <div class="row">
+    <div class="col-5">
+     <div class="card bg-light text-dark">
+      <div class="card-body">
+        ความเห็นอาจารย์ที่ปรึกษา
+        <div class="col">
+          <input type="checkbox" name="v"> ทราบ<br>
+          (แนบลายเซ็น)<br>
+          <br>
+          <div class="col">
+            <input type="file" name="v">
+          </div>
+        </div>
+      </div>
+     </div>
     </div>
-  
+   
+    <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+        ความเห็นประธานอาจารย์ประจําหลักสูตร
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+        ความเห็นคณบดี
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+
+     <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+         ความเห็นผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+
+     <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+         ความเห็นอธิการบด
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+
+     <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+        ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+
+     <div class="col-5">
+      <div class="card bg-light text-dark">
+       <div class="card-body">
+        สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล 
+         <div class="col">
+           <input type="checkbox" name="v"> ทราบ<br>
+           (แนบลายเซ็น)<br>
+           <br>
+           <div class="col">
+             <input type="file" name="v">
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+
+
+
+</div><br/><br/>
+
+
+
+      
+     <a href="file:///C:/Users/User/Desktop/%E0%B8%87%E0%B8%B2%E0%B8%99313/From/from2.html"> <button type="button" class="btn btn-primary">ถัดไป</button>
+
+      <br/><br/> <br/><br/>
 </form>
-
-
-
 </body>
 </html>
